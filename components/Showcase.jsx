@@ -10,9 +10,10 @@ import ProductCard from './ProductCard';
 import FeatureVideo from './FeatureVideo';
 import CollectionDialog from './CollectionDialog';
 import { models } from './models';
+import Shop from './Shop';
 
 
-export default function Showcase({ catalogPage = false, accessoriesPage = false }) {
+export default function Showcase({ catalogPage = false, accessoriesPage = false, shopPage = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [paused, setPaused] = useState(false);
   const [modal, setModal] = useState(null);
@@ -27,7 +28,7 @@ export default function Showcase({ catalogPage = false, accessoriesPage = false 
     }), { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
     return () => { observer.disconnect(); clearTimeout(toastTimer.current); };
-  }, [catalogPage, accessoriesPage]);
+  }, [catalogPage, accessoriesPage, shopPage]);
 
   useEffect(() => {
     if (modal && !dialogRef.current.open) dialogRef.current.showModal();
@@ -65,8 +66,8 @@ export default function Showcase({ catalogPage = false, accessoriesPage = false 
 
   return <>
 
-<header><Link className="brand" href="/" aria-label="Darlin Phones and Accessories home"><Brand /></Link><nav className={menuOpen ? "open" : ""} aria-label="Main navigation" onClick={() => setMenuOpen(false)}><Link href="/iphone" aria-current={catalogPage ? "page" : undefined}>iPhone</Link><Link href="/accessories" aria-current={accessoriesPage ? "page" : undefined}>Accessories</Link><a href="/#darlin">Why Darlin</a></nav><EnquireLink className="enquire-nav" /><button className="menu" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>☰</button></header>
-<main>{accessoriesPage ? <AccessoriesCatalog onDetail={model => openModal({type: "model", model})} /> : catalogPage ? <IPhoneCatalog onDetail={model => openModal({type: "model", model})} onCompare={() => openModal({type: "compare"})} /> : <>
+<header><Link className="brand" href="/" aria-label="Darlin Phones and Accessories home"><Brand /></Link><nav className={menuOpen ? "open" : ""} aria-label="Main navigation" onClick={() => setMenuOpen(false)}><Link href="/shop" aria-current={shopPage ? "page" : undefined}>Shop</Link><Link href="/iphone" aria-current={catalogPage ? "page" : undefined}>iPhone</Link><Link href="/accessories" aria-current={accessoriesPage ? "page" : undefined}>Accessories</Link><a href="/#darlin">Why Darlin</a></nav><EnquireLink className="enquire-nav" /><button className="menu" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>☰</button></header>
+<main>{shopPage ? <Shop onDetail={model => openModal({type: "model", model})} /> : accessoriesPage ? <AccessoriesCatalog onDetail={model => openModal({type: "model", model})} /> : catalogPage ? <IPhoneCatalog onDetail={model => openModal({type: "model", model})} onCompare={() => openModal({type: "compare"})} /> : <>
 <section className="hero" aria-labelledby="hero-title">
   <div className="hero-copy">
     <p className="hero-brand">Darlin Phones <span>and Accessories.</span></p>
@@ -100,7 +101,7 @@ export default function Showcase({ catalogPage = false, accessoriesPage = false 
 <section id="accessories" className="section"><div className="section-head reveal"><div><p className="eyebrow">THE PERFECT PLUS-ONE</p><h2>Make it yours.</h2></div><span className="section-caption">Small additions. Big personality.</span></div><div className="accessory-grid"><article className="accessory reveal"><div><p className="eyebrow">CASES & CHARGING</p><h3>Good looks.<br />Great company.</h3><button className="text-button" onClick={() => openModal({type: "accessory", name: "Cases & charging"})}>Explore essentials</button></div><img src="/assets/accessories.jpg" alt="A collection of iPhone cases and MagSafe accessories" loading="lazy" /></article><article className="accessory reveal"><div><p className="eyebrow">AIRTAG</p><h3>Keep your favourites.<br />Close.</h3><button className="text-button" onClick={() => openModal({type: "accessory", name: "AirTag"})}>Explore AirTag</button></div><img src="/assets/airtag.jpg" alt="AirTag with colourful key ring accessories" loading="lazy" /></article></div></section>
 <section id="darlin" className="darlin section"><p className="eyebrow reveal">THE DARLIN WAY</p><h2 className="reveal">Great phones.<br />A more personal experience.</h2><div className="benefits"><article className="reveal"><span>01 / DISCOVER</span><h3>A little clarity.<br />A better choice.</h3><p>Explore the collection at your pace and find the iPhone that feels right for you.</p></article><article className="reveal"><span>02 / PERSONALISE</span><h3>The details<br />make it yours.</h3><p>Bring your setup together with cases, charging essentials, and everyday extras.</p></article><article className="reveal"><span>03 / CONNECT</span><h3>Your next step.<br />Made simple.</h3><p>Ask about your favourite phones and accessories in a WhatsApp chat with Darlin.</p></article></div></section>
 <section className="closing reveal"><p className="eyebrow">SOMETHING GOOD IS CALLING.</p><h2>Find your next<br />“love this phone.”</h2><Link className="button" href="/iphone">Explore the collection</Link></section></>}</main>
-<footer><Link className="brand" href="/" aria-label="Darlin Phones and Accessories home"><Brand /></Link><div><Link href="/iphone" aria-current={catalogPage ? "page" : undefined}>iPhone</Link><Link href="/accessories" aria-current={accessoriesPage ? "page" : undefined}>Accessories</Link><a href="/#darlin">Why Darlin</a></div><p>© 2026 Darlin Phones & Accessories.</p><small>Independent showcase. Apple and iPhone are trademarks of Apple Inc. Product imagery courtesy of Apple. Availability and pricing require confirmation.</small></footer>
+<footer><Link className="brand" href="/" aria-label="Darlin Phones and Accessories home"><Brand /></Link><div><Link href="/shop" aria-current={shopPage ? "page" : undefined}>Shop</Link><Link href="/iphone" aria-current={catalogPage ? "page" : undefined}>iPhone</Link><Link href="/accessories" aria-current={accessoriesPage ? "page" : undefined}>Accessories</Link><a href="/#darlin">Why Darlin</a></div><p>© 2026 Darlin Phones & Accessories.</p><small>Independent showcase. Apple and iPhone are trademarks of Apple Inc. Product imagery courtesy of Apple. Availability and pricing require confirmation.</small></footer>
 
 <dialog ref={dialogRef} id="dialog" aria-label="Collection details" onClose={closeModal} onClick={event => {
   if (event.target !== event.currentTarget) return;

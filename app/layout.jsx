@@ -1,5 +1,6 @@
 import './globals.css';
 import './hero-interior.css';
+import './shop.css';
 
 export const metadata = {
   icons: { icon: '/brand/darlin-icon.svg' },
