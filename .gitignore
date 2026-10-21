@@ -4,3 +4,10 @@ out/
 .sites-runtime/
 .sites-checkout/
 *.log
+
+.env*
+!.env.example
+
+# Source video exports; the optimized runtime copies live in public/assets.
+/Apple.mp4
+/iPhone 18 Pro and iPhone 18 Pro Max*.mp4

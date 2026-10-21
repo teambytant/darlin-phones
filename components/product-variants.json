@@ -1,0 +1,225 @@
+{
+  "pro": [
+    {
+      "name": "Burgundy",
+      "hex": "#57303a",
+      "image": "/assets/colours/pro-burgundy.png"
+    },
+    {
+      "name": "Glacier",
+      "hex": "#cbdde6",
+      "image": "/assets/colours/pro-glacier.png"
+    },
+    {
+      "name": "Silver",
+      "hex": "#dddcd8",
+      "image": "/assets/colours/pro-silver.png"
+    },
+    {
+      "name": "Black",
+      "hex": "#353535",
+      "image": "/assets/colours/pro-black.png"
+    }
+  ],
+  "air": [
+    {
+      "name": "Sky Blue",
+      "hex": "#cbdfe8",
+      "image": "/assets/colours/air-skyblue.png"
+    },
+    {
+      "name": "Light Gold",
+      "hex": "#e9e2cf",
+      "image": "/assets/colours/air-lightgold.png"
+    },
+    {
+      "name": "Cloud White",
+      "hex": "#ecebe7",
+      "image": "/assets/colours/air-cloudwhite.png"
+    },
+    {
+      "name": "Space Black",
+      "hex": "#252525",
+      "image": "/assets/colours/air-spaceblack.png"
+    }
+  ],
+  "standard": [
+    {
+      "name": "Lavender",
+      "hex": "#b9afd2",
+      "image": "/assets/colours/standard-lavender.png"
+    },
+    {
+      "name": "Sage",
+      "hex": "#bccbb4",
+      "image": "/assets/colours/standard-sage.png"
+    },
+    {
+      "name": "Mist Blue",
+      "hex": "#d1dfeb",
+      "image": "/assets/colours/standard-mistblue.png"
+    },
+    {
+      "name": "White",
+      "hex": "#eeeae2",
+      "image": "/assets/colours/standard-white.png"
+    },
+    {
+      "name": "Black",
+      "hex": "#353535",
+      "image": "/assets/colours/standard-black.png"
+    }
+  ],
+  "duo": [
+    {
+      "name": "Star White",
+      "hex": "#efede6",
+      "image": "/assets/colours/duo-star-white.png"
+    },
+    {
+      "name": "Night Sky",
+      "hex": "#3d4650",
+      "image": "/assets/colours/duo-night-sky.png"
+    }
+  ],
+  "17e": [
+    {
+      "name": "Soft Pink",
+      "hex": "#e9ccd0",
+      "image": "/assets/colours/17e-softpink.png"
+    },
+    {
+      "name": "White",
+      "hex": "#ecebe7",
+      "image": "/assets/colours/17e-white.png"
+    },
+    {
+      "name": "Black",
+      "hex": "#262626",
+      "image": "/assets/colours/17e-black.png"
+    }
+  ],
+  "16": [
+    {
+      "name": "Ultramarine",
+      "hex": "#5865a9",
+      "image": "/assets/colours/16-ultramarine.png"
+    },
+    {
+      "name": "Teal",
+      "hex": "#9dbdb6",
+      "image": "/assets/colours/16-teal.png"
+    },
+    {
+      "name": "Pink",
+      "hex": "#e6a9c6",
+      "image": "/assets/colours/16-pink.png"
+    },
+    {
+      "name": "White",
+      "hex": "#ecebe7",
+      "image": "/assets/colours/16-white.png"
+    },
+    {
+      "name": "Black",
+      "hex": "#262626",
+      "image": "/assets/colours/16-black.png"
+    }
+  ],
+  "case-woven": [
+    {
+      "name": "Burgundy",
+      "hex": "#6f4447",
+      "image": "/assets/colours/case-woven-burgundy.jpg"
+    },
+    {
+      "name": "Olive",
+      "hex": "#6c6650",
+      "image": "/assets/colours/case-woven-olive.jpg"
+    },
+    {
+      "name": "Taupe",
+      "hex": "#807561",
+      "image": "/assets/colours/case-woven-taupe.jpg"
+    },
+    {
+      "name": "Chambray Blue",
+      "hex": "#686f7b",
+      "image": "/assets/colours/case-woven-chambrayblue.jpg"
+    },
+    {
+      "name": "Mulberry",
+      "hex": "#734253",
+      "image": "/assets/colours/case-woven-mulberry.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#4b4a49",
+      "image": "/assets/colours/case-woven-black.jpg"
+    }
+  ],
+  "case-silicone": [
+    {
+      "name": "Burgundy",
+      "hex": "#633b44",
+      "image": "/assets/colours/case-silicone-burgundy.jpg"
+    },
+    {
+      "name": "Olive",
+      "hex": "#938563",
+      "image": "/assets/colours/case-silicone-olive.jpg"
+    },
+    {
+      "name": "Crisp Blue",
+      "hex": "#d4e2ef",
+      "image": "/assets/colours/case-silicone-crispblue.jpg"
+    },
+    {
+      "name": "Navy Blue",
+      "hex": "#43484e",
+      "image": "/assets/colours/case-silicone-navyblue.jpg"
+    },
+    {
+      "name": "Magenta",
+      "hex": "#ae4288",
+      "image": "/assets/colours/case-silicone-magenta.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#444547",
+      "image": "/assets/colours/case-silicone-black.jpg"
+    }
+  ],
+  "wallet": [
+    {
+      "name": "Burgundy",
+      "hex": "#5f3943",
+      "image": "/assets/colours/wallet-burgundy.jpg"
+    },
+    {
+      "name": "Dark Olive",
+      "hex": "#6f6449",
+      "image": "/assets/colours/wallet-darkolive.jpg"
+    },
+    {
+      "name": "Wildflower Blue",
+      "hex": "#768caf",
+      "image": "/assets/colours/wallet-wildflowerblue.jpg"
+    },
+    {
+      "name": "Magenta",
+      "hex": "#9b3580",
+      "image": "/assets/colours/wallet-magenta.jpg"
+    },
+    {
+      "name": "Navy",
+      "hex": "#3d404f",
+      "image": "/assets/colours/wallet-navy.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#3f3f3f",
+      "image": "/assets/colours/wallet-black.jpg"
+    }
+  ]
+}

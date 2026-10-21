@@ -1,17 +1,20 @@
-export default function ProductCard({ model, saved, onDetail, onToggle }) {
+'use client';
+
+import { useState } from 'react';
+import EnquireLink from './EnquireLink';
+import ProductMedia from './ProductMedia';
+
+export default function ProductCard({ model, onDetail, reveal = true }) {
+  const [selected, setSelected] = useState(model.variants?.[0]?.name);
+  const product = `${model.name}${selected ? ` in ${selected}` : ''}`;
   return (
-    <article className="product reveal">
-      <div className="product-photo">
-        <img src={`/assets/${model.image}.jpg`} alt={`${model.name} front and back`} loading="lazy" />
-      </div>
+    <article className={`product${reveal ? ' reveal' : ''}`}>
+      <ProductMedia model={model} selected={selected} onSelect={setSelected} />
       <div className="product-content">
-        <div className="dots" aria-label="Example finishes">
-          {model.colors.map(color => <i key={color} style={{ background: color }} />)}
-        </div>
         <h3>{model.name}</h3><p>{model.copy}</p>
         <div className="product-actions">
-          <button className="text-button" onClick={onDetail}>Take a closer look ↗</button>
-          <button className="add" onClick={onToggle} aria-pressed={saved}>{saved ? 'Saved ✓' : 'Shortlist +'}</button>
+          <button className="text-button" onClick={() => onDetail({ ...model, selectedColor: selected })}>Take a closer look</button>
+          <EnquireLink product={product} className="add" />
         </div>
       </div>
     </article>

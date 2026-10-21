@@ -1,0 +1,13 @@
+import variants from './product-variants.json';
+
+export const accessories = [
+  { name: 'TechWoven MagSafe Case', family: 'Cases', image: 'case-woven', copy: 'A little texture. A lot of personality.', colors: ['#683440'], detail: 'Explore the iPhone 18 Pro TechWoven Case with MagSafe. Confirm the exact phone model, available colours, and pricing before ordering.' },
+  { name: 'Silicone MagSafe Case', family: 'Cases', image: 'case-silicone', copy: 'A soft touch for your everyday companion.', colors: ['#25384c'], detail: 'Explore the iPhone 18 Pro Max Silicone Case with MagSafe. Cases are model-specific; ask Darlin to confirm the right fit and available finishes.' },
+  { name: 'Clear MagSafe Case', family: 'Cases', image: 'case-clear', copy: 'Let your iPhone colour do the talking.', colors: [], detail: 'Explore the iPhone 18 Pro Clear Case with MagSafe. Confirm compatibility with your exact iPhone model, availability, and current price.' },
+  { name: 'MagSafe Charger', family: 'Charging', image: 'charger', copy: 'A simple snap. An everyday essential.', colors: [], detail: 'Explore the MagSafe Charger. Confirm compatibility, cable length, required power adapter, and charging performance for your iPhone with Darlin.' },
+  { name: 'USB-C Charge Cable', family: 'Charging', image: 'cable', copy: 'Stay connected. Keep going.', colors: [], detail: 'Explore USB-C charging cables. Ask Darlin to confirm cable length, supported power, device compatibility, and availability.' },
+  { name: '20W USB-C Power Adapter', family: 'Charging', image: 'adapter', copy: 'A little power for the everyday.', colors: [], detail: 'Explore the 20W USB-C Power Adapter. Confirm the plug type for your region and the charging cable required for your device.' },
+  { name: 'AirPods Pro 3', family: 'Audio', image: 'airpods', copy: 'Your favourite sounds. Closer than ever.', colors: [], detail: 'Explore AirPods Pro 3. Ask Darlin to confirm availability, compatibility with your device, included accessories, and current pricing.' },
+  { name: 'FineWoven MagSafe Wallet', family: 'Everyday extras', image: 'wallet', copy: 'Your essentials. Along for the ride.', colors: ['#646544'], detail: 'Explore the iPhone FineWoven Wallet with MagSafe. Confirm compatibility with your iPhone and case, available colours, and pricing.' },
+  { name: 'AirTag', family: 'Everyday extras', image: 'airtag', copy: 'A little help keeping your things close.', colors: [], detail: 'Explore AirTag and key ring accessories. Confirm pack size, compatible devices, and whether the pictured key rings are included or sold separately.' },
+].map(item => ({ ...item, variants: variants[item.image] || [] }));
