@@ -81,6 +81,7 @@ export default function Showcase({ catalogPage = false, accessoriesPage = false 
     <source src="/assets/apple.mp4" type="video/mp4" />
     Your browser does not support embedded video.
   </video>
+  <img className="hero-interior" src="/assets/shop-interior-hero.png" alt="" aria-hidden="true" />
   <button className="hero-playback" id="motion" aria-pressed={paused} aria-label={paused ? "Play hero video" : "Pause hero video"} aria-controls="hero-video" onClick={toggleVideo}>{paused ? '\u25b6' : '\u2161'}</button>
 </section>
 <section className="pro-showcase" aria-labelledby="pro-showcase-title">

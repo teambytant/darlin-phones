@@ -1,0 +1,12 @@
+.hero-interior {
+  position: absolute;
+  z-index: 1;
+  inset: -8%;
+  width: 116%;
+  height: 116%;
+  object-fit: cover;
+  opacity: 0.09;
+  mix-blend-mode: multiply;
+  filter: blur(1px);
+  pointer-events: none;
+}
