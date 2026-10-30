@@ -96,3 +96,21 @@ dialog.product-dialog{width:min(1180px,calc(100vw - 48px));max-height:92svh;padd
 .snapchat-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#fffc00;color:#17212b;flex:none}
 .footer-social-copy{display:flex;flex-direction:column;gap:2px;font-size:12px;font-weight:600}
 .footer-social-placeholder{font-size:10px;font-weight:400;color:var(--muted)}
+/* Mobile lineup navigation sits below the card, clear of product actions. */
+.lineup-carousel{min-width:0}
+.lineup-carousel-controls{display:none}
+@media(max-width:800px){
+  .lineup-carousel .product-grid{padding-bottom:6px;scrollbar-width:none}
+  .lineup-carousel .product-grid::-webkit-scrollbar{display:none}
+  .lineup-carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:22px}
+  .lineup-slide-position{display:flex;align-items:center;gap:12px;font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:1px}
+  .lineup-slide-current{font-weight:700;color:var(--ink)}
+  .lineup-slide-divider{display:block;width:32px;height:1px;background:#cdd8e3}
+  .lineup-slide-total{color:#8b97a3}
+  .lineup-arrow-group{display:flex;align-items:center;gap:10px}
+  .lineup-arrow{display:grid;place-items:center;width:48px;height:48px;border:1px solid #d8e2ec;border-radius:50%;background:#fff;color:var(--ink);box-shadow:0 3px 10px #17212b06;transition:background 160ms,color 160ms,border-color 160ms,transform 240ms var(--ease-out),box-shadow 240ms}
+  .lineup-arrow-next{background:var(--ink);border-color:var(--ink);color:#fff}
+  .lineup-arrow:not(:disabled):hover{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 5px 14px #0066cc20}
+  .lineup-arrow:not(:disabled):active{transform:scale(.92)}
+  .lineup-arrow:disabled{background:#f5f7fa;border-color:#e8edf2;color:#bdc6cf;box-shadow:none;cursor:default}
+}
