@@ -58,7 +58,6 @@ export default function Showcase({ catalogPage = false, accessoriesPage = false,
     <p className="hero-note"><span aria-hidden="true">&bull;</span> A little guidance? We’re a WhatsApp away.</p>
   </div>
   <FeatureVideo src="/assets/apple.mp4" poster="/assets/hero.jpg" label="iPhone showcase" className="hero-media" />
-  <div className="hero-caption"><span>THE DARLIN COLLECTION</span><span>Find your everyday favourite</span></div>
 </section>
 <section className="pro-showcase" aria-labelledby="pro-showcase-title">
   <div className="pro-showcase-copy">
