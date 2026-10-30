@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pro-perspective",
+    "title": "A different kind of Pro.",
+    "category": "iPhone",
+    "image": "/assets/hero.jpg",
+    "alt": "Burgundy iPhone Pro with a sculptural Pro backdrop",
+    "product": "pro",
+    "description": "The Pro collection, seen a little differently. Find your finish and make it yours.",
+    "theme": "dark",
+    "fit": "cover"
+  },
+  {
+    "id": "everyday-essentials",
+    "title": "The perfect company.",
+    "category": "Accessories",
+    "image": "/assets/accessories.jpg",
+    "alt": "iPhone cases and MagSafe accessories in coordinated colours",
+    "product": "case-woven",
+    "description": "Cases, charging, and the little details that pull your everyday setup together.",
+    "theme": "light",
+    "fit": "cover"
+  },
+  {
+    "id": "camera-details",
+    "title": "It is all in the details.",
+    "category": "iPhone",
+    "image": "/assets/camera.jpg",
+    "alt": "A close-up of the iPhone Pro camera system",
+    "product": "pro",
+    "description": "Take a closer look at the Pro camera collection. Small details. A fresh perspective.",
+    "theme": "dark",
+    "fit": "cover"
+  },
+  {
+    "id": "woven-finish",
+    "title": "A little more texture.",
+    "category": "Accessories",
+    "image": "/assets/case-woven.jpg",
+    "alt": "TechWoven MagSafe iPhone case",
+    "product": "case-woven",
+    "description": "A tactile finish for the phone you take everywhere. Explore the colours and find your fit.",
+    "theme": "warm",
+    "fit": "contain"
+  },
+  {
+    "id": "air-in-blue",
+    "title": "A lighter kind of everyday.",
+    "category": "iPhone",
+    "image": "/assets/colours/air-skyblue.png",
+    "alt": "iPhone Air in Sky Blue",
+    "product": "air",
+    "selectedColor": "Sky Blue",
+    "description": "Meet the Air collection. Clean lines and a finish that feels like you.",
+    "theme": "blue",
+    "fit": "contain"
+  },
+  {
+    "id": "sound-companion",
+    "title": "Your world. Your soundtrack.",
+    "category": "Accessories",
+    "image": "/assets/airpods.jpg",
+    "alt": "AirPods Pro and charging case",
+    "product": "airpods",
+    "description": "From your morning routine to the journey home. Explore the audio collection.",
+    "theme": "light",
+    "fit": "contain"
+  },
+  {
+    "id": "classic-pro",
+    "title": "A classic, with character.",
+    "category": "iPhone",
+    "image": "/assets/colours/15-pro-bluetitanium.jpg",
+    "alt": "iPhone 15 Pro in Blue Titanium",
+    "product": "15-pro",
+    "selectedColor": "Blue Titanium",
+    "description": "A closer look at Blue Titanium. Explore classic iPhone models in your preferred colour and storage.",
+    "theme": "blue",
+    "fit": "contain"
+  },
+  {
+    "id": "keep-it-close",
+    "title": "The little things, closer.",
+    "category": "Accessories",
+    "image": "/assets/airtag.jpg",
+    "alt": "AirTag with a selection of colourful key ring accessories",
+    "product": "airtag",
+    "description": "Everyday extras for the things that go everywhere with you.",
+    "theme": "warm",
+    "fit": "cover"
+  }
+]

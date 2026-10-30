@@ -1,0 +1,163 @@
+/* Shared timing keeps feedback consistent across every page. */
+:root {
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-ui: cubic-bezier(.2, .7, .2, 1);
+  --motion-fast: 160ms;
+  --motion-normal: 280ms;
+  --motion-reveal: 620ms;
+}
+
+header {
+  transition: background var(--motion-normal), box-shadow var(--motion-normal), border-color var(--motion-normal);
+}
+header.is-scrolled {
+  background: #fffffff5;
+  box-shadow: 0 5px 24px #17212b0a;
+  border-color: #dce4ec;
+}
+header .brand img { transition: opacity var(--motion-fast), transform var(--motion-normal) var(--ease-out); }
+header .brand:active img { transform: scale(.97); }
+nav a {
+  transition: color var(--motion-fast), background var(--motion-normal), transform var(--motion-normal) var(--ease-out);
+}
+
+/* A short entrance on navigation; later sections reveal on scroll. */
+main { animation: page-enter 420ms var(--ease-out); }
+@keyframes page-enter {
+  from { opacity: .25; translate: 0 10px; }
+  to { opacity: 1; translate: 0 0; }
+}
+.motion-reveal, .reveal {
+  transition: opacity var(--motion-reveal) var(--ease-out), transform var(--motion-reveal) var(--ease-out);
+}
+.motion-reveal:not(.motion-visible) { opacity: 0; transform: translateY(22px); }
+.motion-reveal.motion-visible, .reveal.visible { opacity: 1; transform: none; }
+.catalog-grid > .product, .shop-popular-grid > .product {
+  animation: result-enter 360ms var(--ease-out);
+}
+@keyframes result-enter {
+  from { opacity: .3; translate: 0 10px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* Hover and press feedback without changing hit targets or layout. */
+.button, .add, .enquire-nav, .shop-outline-button, .close,
+.catalog-filters button, .storage-choices button, .colour-swatch,
+.zoom-controls button, .menu, .collection-tile-actions button {
+  transition: background-color var(--motion-fast), color var(--motion-fast),
+    border-color var(--motion-fast), box-shadow var(--motion-normal),
+    transform var(--motion-normal) var(--ease-out), opacity var(--motion-fast);
+}
+.button:active, .add:active, .enquire-nav:active, .shop-outline-button:active,
+.collection-tile-actions button:active { transform: translateY(1px) scale(.975); }
+.close:active, .menu:active, .zoom-controls button:active:not(:disabled) { transform: scale(.92); }
+.catalog-filters button:active, .storage-choices button:active { transform: scale(.96); }
+.colour-swatch:active { transform: scale(.88); }
+.colour-swatch span { transition: transform var(--motion-normal) var(--ease-out), box-shadow var(--motion-fast); }
+.colour-swatch[aria-pressed=true] span { transform: scale(.88); }
+.storage-choices button[aria-pressed=true] { animation: selection-settle 220ms var(--ease-out); }
+@keyframes selection-settle {
+  from { transform: scale(.96); }
+  to { transform: scale(1); }
+}
+.catalog-search, .generation-filter select {
+  transition: border-color var(--motion-fast), background var(--motion-fast), box-shadow var(--motion-normal);
+}
+.catalog-search:focus-within { border-color: #8dbdea; box-shadow: 0 0 0 4px #0066cc0a; }
+.variant-image { animation: finish-change 320ms var(--ease-out); }
+@keyframes finish-change {
+  from { opacity: .2; translate: 0 4px; }
+  to { opacity: 1; translate: 0 0; }
+}
+.product, .catalog-grid .product, .shop-popular-grid .product, .shop-category {
+  transition: box-shadow var(--motion-normal), transform 380ms var(--ease-out), border-color var(--motion-normal), opacity var(--motion-reveal);
+}
+.product-photo img { transition: transform 650ms var(--ease-out); }
+.shop-category img, .accessory img, .catalog-help > img {
+  transition: transform 700ms var(--ease-out);
+}
+.text-button, footer a, .collection-enquire {
+  transition: color var(--motion-fast), text-decoration-color var(--motion-fast), opacity var(--motion-fast);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+/* The overlay and its content enter at slightly different speeds. */
+.collection-overlay { transition: opacity 320ms var(--ease-ui), visibility 320ms; }
+.collection-overlay > * {
+  translate: 0 14px;
+  transition: translate 440ms var(--ease-out);
+}
+.collection-tile.is-active .collection-overlay > *, .collection-tile:has(:focus-visible) .collection-overlay > * { translate: 0 0; }
+.collection-overlay > :nth-child(2) { transition-delay: 25ms; }
+.collection-overlay > :nth-child(3) { transition-delay: 50ms; }
+.collection-overlay > :nth-child(4) { transition-delay: 75ms; }
+.collection-photo img { transition: transform 850ms var(--ease-out); }
+
+/* Keep the native dialog and backdrop present until the exit is complete. */
+dialog[open] { animation: dialog-enter 300ms var(--ease-out) both; }
+dialog[open]::backdrop { animation: backdrop-enter 260ms ease-out both; }
+dialog[open].is-closing { animation: dialog-exit 180ms ease-in both; pointer-events: none; }
+dialog[open].is-closing::backdrop { animation: backdrop-exit 180ms ease-in both; }
+@keyframes dialog-enter {
+  from { opacity: 0; transform: translateY(16px) scale(.975); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes dialog-exit {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(8px) scale(.985); }
+}
+@keyframes backdrop-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes backdrop-exit { from { opacity: 1; } to { opacity: 0; } }
+
+/* One icon morphs between the menu and close states. */
+.menu-icon { display: block; position: relative; width: 17px; height: 16px; }
+.menu-icon > span {
+  position: absolute; left: 0; width: 17px; height: 1.5px;
+  border-radius: 2px; background: currentColor;
+  transition: transform var(--motion-normal) var(--ease-out), opacity var(--motion-fast);
+}
+.menu-icon > span:nth-child(1) { top: 2px; }
+.menu-icon > span:nth-child(2) { top: 7px; }
+.menu-icon > span:nth-child(3) { top: 12px; }
+.menu[aria-expanded=true] .menu-icon > span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+.menu[aria-expanded=true] .menu-icon > span:nth-child(2) { opacity: 0; transform: scaleX(.4); }
+.menu[aria-expanded=true] .menu-icon > span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
+@media (hover: hover) and (pointer: fine) {
+  header .brand:hover img { opacity: .8; }
+  nav a:hover { transform: translateY(-1px); }
+  .product:hover, .catalog-grid .product:hover, .shop-popular-grid .product:hover { transform: translateY(-5px); border-color: #cad8e5; box-shadow: 0 16px 36px #1b3c6010; }
+  .shop-category:hover img { transform: scale(1.055); }
+  .accessory:hover img, .catalog-help:hover > img { transform: scale(1.025); }
+  .close:hover { background: #eaf2fa; transform: rotate(8deg); }
+}
+@media (max-width: 1100px) {
+  header nav, header nav.open {
+    display: flex; flex-direction: column; overflow: hidden;
+    transition: max-height 280ms var(--ease-out), opacity 180ms,
+      padding 280ms var(--ease-out), visibility 280ms;
+  }
+  header nav:not(.open) {
+    max-height: 0; opacity: 0; visibility: hidden;
+    padding-block: 0; border-bottom-color: transparent; pointer-events: none;
+  }
+  header nav.open { max-height: min(460px, calc(100svh - 76px)); overflow-y: auto; opacity: 1; visibility: visible; padding-block: 16px; }
+  header nav a { opacity: 0; translate: 0 -5px; transition: opacity 180ms, translate 280ms var(--ease-out), background 160ms; }
+  header nav.open a { opacity: 1; translate: 0 0; }
+  header nav.open a:nth-child(2) { transition-delay: 20ms; }
+  header nav.open a:nth-child(3) { transition-delay: 40ms; }
+  header nav.open a:nth-child(4) { transition-delay: 60ms; }
+  header nav.open a:nth-child(5) { transition-delay: 80ms; }
+  header nav.open a:nth-child(6) { transition-delay: 100ms; }
+}
+@media (hover: none) {
+  .collection-overlay > * { translate: none; }
+  .product:hover, .catalog-grid .product:hover, .shop-popular-grid .product:hover { transform: none; }
+}
+@media (max-width: 600px) { .collection-overlay > * { translate: none; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .motion-reveal, .reveal { opacity: 1 !important; transform: none !important; }
+  .collection-overlay > * { translate: none; }
+}

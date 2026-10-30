@@ -221,5 +221,358 @@
       "hex": "#3f3f3f",
       "image": "/assets/colours/wallet-black.jpg"
     }
+  ],
+  "12-pro-max": [
+    {
+      "name": "Gold",
+      "hex": "#e8d7bd",
+      "image": "/assets/colours/12-pro-max-gold.jpg"
+    },
+    {
+      "name": "Graphite",
+      "hex": "#595956",
+      "image": "/assets/colours/12-pro-max-graphite.jpg"
+    },
+    {
+      "name": "Pacific Blue",
+      "hex": "#456775",
+      "image": "/assets/colours/12-pro-max-pacificblue.jpg"
+    },
+    {
+      "name": "Silver",
+      "hex": "#e2e3e2",
+      "image": "/assets/colours/12-pro-max-silver.jpg"
+    }
+  ],
+  "12-pro": [
+    {
+      "name": "Gold",
+      "hex": "#e8d7bd",
+      "image": "/assets/colours/12-pro-gold.jpg"
+    },
+    {
+      "name": "Graphite",
+      "hex": "#595956",
+      "image": "/assets/colours/12-pro-graphite.jpg"
+    },
+    {
+      "name": "Pacific Blue",
+      "hex": "#456775",
+      "image": "/assets/colours/12-pro-pacificblue.jpg"
+    },
+    {
+      "name": "Silver",
+      "hex": "#e2e3e2",
+      "image": "/assets/colours/12-pro-silver.jpg"
+    }
+  ],
+  "12": [
+    {
+      "name": "Black",
+      "hex": "#252525",
+      "image": "/assets/colours/12-black.jpg"
+    },
+    {
+      "name": "Blue",
+      "hex": "#7b9db5",
+      "image": "/assets/colours/12-blue.jpg"
+    },
+    {
+      "name": "Green",
+      "hex": "#9bb9a6",
+      "image": "/assets/colours/12-green.jpg"
+    },
+    {
+      "name": "Purple",
+      "hex": "#b9afd0",
+      "image": "/assets/colours/12-purple.jpg"
+    },
+    {
+      "name": "(PRODUCT)RED",
+      "hex": "#bc263b",
+      "image": "/assets/colours/12-red.jpg"
+    },
+    {
+      "name": "White",
+      "hex": "#f2f0eb",
+      "image": "/assets/colours/12-white.jpg"
+    }
+  ],
+  "13-pro-max": [
+    {
+      "name": "Silver",
+      "hex": "#e2e3e2",
+      "image": "/assets/colours/13-pro-max-silver.jpg"
+    },
+    {
+      "name": "Graphite",
+      "hex": "#595956",
+      "image": "/assets/colours/13-pro-max-graphite.jpg"
+    },
+    {
+      "name": "Sierra Blue",
+      "hex": "#a5bdcf",
+      "image": "/assets/colours/13-pro-max-sierrablue.jpg"
+    },
+    {
+      "name": "Gold",
+      "hex": "#e8d7bd",
+      "image": "/assets/colours/13-pro-max-gold.jpg"
+    },
+    {
+      "name": "Alpine Green",
+      "hex": "#576e5b",
+      "image": "/assets/colours/13-pro-max-alpinegreen.jpg"
+    }
+  ],
+  "13-pro": [
+    {
+      "name": "Silver",
+      "hex": "#e2e3e2",
+      "image": "/assets/colours/13-pro-silver.jpg"
+    },
+    {
+      "name": "Graphite",
+      "hex": "#595956",
+      "image": "/assets/colours/13-pro-graphite.jpg"
+    },
+    {
+      "name": "Sierra Blue",
+      "hex": "#a5bdcf",
+      "image": "/assets/colours/13-pro-sierrablue.jpg"
+    },
+    {
+      "name": "Gold",
+      "hex": "#e8d7bd",
+      "image": "/assets/colours/13-pro-gold.jpg"
+    },
+    {
+      "name": "Alpine Green",
+      "hex": "#576e5b",
+      "image": "/assets/colours/13-pro-alpinegreen.jpg"
+    }
+  ],
+  "13": [
+    {
+      "name": "Starlight",
+      "hex": "#eee9df",
+      "image": "/assets/colours/13-starlight.jpg"
+    },
+    {
+      "name": "Midnight",
+      "hex": "#292d35",
+      "image": "/assets/colours/13-midnight.jpg"
+    },
+    {
+      "name": "Blue",
+      "hex": "#7b9db5",
+      "image": "/assets/colours/13-blue.jpg"
+    },
+    {
+      "name": "Pink",
+      "hex": "#edcbd1",
+      "image": "/assets/colours/13-pink.jpg"
+    },
+    {
+      "name": "(PRODUCT)RED",
+      "hex": "#bc263b",
+      "image": "/assets/colours/13-red.jpg"
+    },
+    {
+      "name": "Green",
+      "hex": "#9bb9a6",
+      "image": "/assets/colours/13-green.jpg"
+    }
+  ],
+  "14-pro-max": [
+    {
+      "name": "Deep Purple",
+      "hex": "#665c70",
+      "image": "/assets/colours/14-pro-max-deeppurple.jpg"
+    },
+    {
+      "name": "Gold",
+      "hex": "#e8d7bd",
+      "image": "/assets/colours/14-pro-max-gold.jpg"
+    },
+    {
+      "name": "Silver",
+      "hex": "#e2e3e2",
+      "image": "/assets/colours/14-pro-max-silver.jpg"
+    },
+    {
+      "name": "Space Black",
+      "hex": "#363636",
+      "image": "/assets/colours/14-pro-max-spaceblack.jpg"
+    }
+  ],
+  "14-pro": [
+    {
+      "name": "Deep Purple",
+      "hex": "#665c70",
+      "image": "/assets/colours/14-pro-deeppurple.jpg"
+    },
+    {
+      "name": "Gold",
+      "hex": "#e8d7bd",
+      "image": "/assets/colours/14-pro-gold.jpg"
+    },
+    {
+      "name": "Silver",
+      "hex": "#e2e3e2",
+      "image": "/assets/colours/14-pro-silver.jpg"
+    },
+    {
+      "name": "Space Black",
+      "hex": "#363636",
+      "image": "/assets/colours/14-pro-spaceblack.jpg"
+    }
+  ],
+  "14": [
+    {
+      "name": "Starlight",
+      "hex": "#eee9df",
+      "image": "/assets/colours/14-starlight.jpg"
+    },
+    {
+      "name": "Midnight",
+      "hex": "#292d35",
+      "image": "/assets/colours/14-midnight.jpg"
+    },
+    {
+      "name": "Blue",
+      "hex": "#7b9db5",
+      "image": "/assets/colours/14-blue.jpg"
+    },
+    {
+      "name": "(PRODUCT)RED",
+      "hex": "#bc263b",
+      "image": "/assets/colours/14-red.jpg"
+    },
+    {
+      "name": "Purple",
+      "hex": "#b9afd0",
+      "image": "/assets/colours/14-purple.jpg"
+    },
+    {
+      "name": "Yellow",
+      "hex": "#f3df9c",
+      "image": "/assets/colours/14-yellow.jpg"
+    }
+  ],
+  "15-pro-max": [
+    {
+      "name": "Natural Titanium",
+      "hex": "#b7b2a8",
+      "image": "/assets/colours/15-pro-max-naturaltitanium.jpg"
+    },
+    {
+      "name": "Blue Titanium",
+      "hex": "#465264",
+      "image": "/assets/colours/15-pro-max-bluetitanium.jpg"
+    },
+    {
+      "name": "White Titanium",
+      "hex": "#e8e6df",
+      "image": "/assets/colours/15-pro-max-whitetitanium.jpg"
+    },
+    {
+      "name": "Black Titanium",
+      "hex": "#434442",
+      "image": "/assets/colours/15-pro-max-blacktitanium.jpg"
+    }
+  ],
+  "15-pro": [
+    {
+      "name": "Natural Titanium",
+      "hex": "#b7b2a8",
+      "image": "/assets/colours/15-pro-naturaltitanium.jpg"
+    },
+    {
+      "name": "Blue Titanium",
+      "hex": "#465264",
+      "image": "/assets/colours/15-pro-bluetitanium.jpg"
+    },
+    {
+      "name": "White Titanium",
+      "hex": "#e8e6df",
+      "image": "/assets/colours/15-pro-whitetitanium.jpg"
+    },
+    {
+      "name": "Black Titanium",
+      "hex": "#434442",
+      "image": "/assets/colours/15-pro-blacktitanium.jpg"
+    }
+  ],
+  "15": [
+    {
+      "name": "Pink",
+      "hex": "#edcbd1",
+      "image": "/assets/colours/15-pink.jpg"
+    },
+    {
+      "name": "Yellow",
+      "hex": "#f3df9c",
+      "image": "/assets/colours/15-yellow.jpg"
+    },
+    {
+      "name": "Green",
+      "hex": "#9bb9a6",
+      "image": "/assets/colours/15-green.jpg"
+    },
+    {
+      "name": "Blue",
+      "hex": "#7b9db5",
+      "image": "/assets/colours/15-blue.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#252525",
+      "image": "/assets/colours/15-black.jpg"
+    }
+  ],
+  "16-pro-max": [
+    {
+      "name": "Desert Titanium",
+      "hex": "#c8ac95",
+      "image": "/assets/colours/16-pro-max-deserttitanium.jpg"
+    },
+    {
+      "name": "Natural Titanium",
+      "hex": "#b7b2a8",
+      "image": "/assets/colours/16-pro-max-naturaltitanium.jpg"
+    },
+    {
+      "name": "White Titanium",
+      "hex": "#e8e6df",
+      "image": "/assets/colours/16-pro-max-whitetitanium.jpg"
+    },
+    {
+      "name": "Black Titanium",
+      "hex": "#434442",
+      "image": "/assets/colours/16-pro-max-blacktitanium.jpg"
+    }
+  ],
+  "16-pro": [
+    {
+      "name": "Desert Titanium",
+      "hex": "#c8ac95",
+      "image": "/assets/colours/16-pro-deserttitanium.jpg"
+    },
+    {
+      "name": "Natural Titanium",
+      "hex": "#b7b2a8",
+      "image": "/assets/colours/16-pro-naturaltitanium.jpg"
+    },
+    {
+      "name": "White Titanium",
+      "hex": "#e8e6df",
+      "image": "/assets/colours/16-pro-whitetitanium.jpg"
+    },
+    {
+      "name": "Black Titanium",
+      "hex": "#434442",
+      "image": "/assets/colours/16-pro-blacktitanium.jpg"
+    }
   ]
 }

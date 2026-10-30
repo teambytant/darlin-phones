@@ -71,7 +71,8 @@ def accessory_variants(item):
         return key, list(pool.map(variant, swatches))
 
 if __name__ == '__main__':
-    manifest = {}
+    manifest_path = ROOT / 'components/product-variants.json'
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else {}
     with ThreadPoolExecutor(max_workers=4) as pool:
         for key, variants in pool.map(phone_variants, PHONES):
             manifest[key] = variants

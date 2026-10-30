@@ -1,0 +1,176 @@
+[
+  {
+    "name": "iPhone 16 Pro",
+    "family": "Pro",
+    "image": "16-pro",
+    "copy": "Pro detail. Titanium character.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 16 Pro and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 16 Pro Max",
+    "family": "Pro Max",
+    "image": "16-pro-max",
+    "copy": "More room for your Pro moments.",
+    "storageOptions": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 16 Pro Max and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 15",
+    "family": "Everyday",
+    "image": "15",
+    "copy": "Colourful by nature. Yours by choice.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "detail": "Explore iPhone 15 and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 15 Pro",
+    "family": "Pro",
+    "image": "15-pro",
+    "copy": "Titanium style. A distinctly Pro feel.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 15 Pro and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 15 Pro Max",
+    "family": "Pro Max",
+    "image": "15-pro-max",
+    "copy": "The Pro experience, on a bigger canvas.",
+    "storageOptions": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 15 Pro Max and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 14",
+    "family": "Everyday",
+    "image": "14",
+    "copy": "An everyday favourite, in your colour.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "detail": "Explore iPhone 14 and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 14 Pro",
+    "family": "Pro",
+    "image": "14-pro",
+    "copy": "A closer look at the Pro collection.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 14 Pro and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 14 Pro Max",
+    "family": "Pro Max",
+    "image": "14-pro-max",
+    "copy": "Big screen. Your kind of Pro.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 14 Pro Max and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 13",
+    "family": "Everyday",
+    "image": "13",
+    "copy": "A classic choice. A colour for you.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "detail": "Explore iPhone 13 and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 13 Pro",
+    "family": "Pro",
+    "image": "13-pro",
+    "copy": "Classic Pro. Full of possibilities.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 13 Pro and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 13 Pro Max",
+    "family": "Pro Max",
+    "image": "13-pro-max",
+    "copy": "A bigger view of your everyday.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "detail": "Explore iPhone 13 Pro Max and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 12",
+    "family": "Everyday",
+    "image": "12",
+    "copy": "A timeless design. An everyday companion.",
+    "storageOptions": [
+      "64GB",
+      "128GB",
+      "256GB"
+    ],
+    "detail": "Explore iPhone 12 and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 12 Pro",
+    "family": "Pro",
+    "image": "12-pro",
+    "copy": "A classic design with a Pro touch.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "detail": "Explore iPhone 12 Pro and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  },
+  {
+    "name": "iPhone 12 Pro Max",
+    "family": "Pro Max",
+    "image": "12-pro-max",
+    "copy": "Classic Pro, with room for more.",
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
+    "detail": "Explore iPhone 12 Pro Max and choose your preferred colour and storage. Ask Darlin to confirm condition, battery health, available configurations, and current pricing before ordering."
+  }
+]
